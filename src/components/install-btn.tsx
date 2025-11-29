@@ -75,7 +75,7 @@ export default function InstallPWAButton() {
   }
 
   return (
-    <div className="fixed bottom-20 right-8 z-50">
+    <>
       <Button
         onClick={handleInstallClick}
         variant="outline"
@@ -86,6 +86,6 @@ export default function InstallPWAButton() {
         <Gpu size={16} className="mr-2" />
         Install App
       </Button>
-    </div>
+    </>
   );
 }
