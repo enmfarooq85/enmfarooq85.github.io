@@ -1,14 +1,23 @@
 // Libraries Imports
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 // Local Imports
-import HomePage from "@/pages/home";
+const HomePage = lazy(() => import("@/pages/home"));
 
 export default function AppRouting() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route index element={<HomePage />} />
-      </Routes>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center min-h-screen">
+            <div className="loader"></div>
+          </div>
+        }
+      >
+        <Routes>
+          <Route index element={<HomePage />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }
