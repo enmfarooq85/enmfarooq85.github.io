@@ -6,6 +6,7 @@ import SocialLinksComp from "@/components/social-links";
 import { about } from "@/data/content";
 import { menuItems } from "@/data/navbar";
 import InstallPWAButton from "@/components/install-btn";
+import { Link } from "react-router-dom";
 
 export default function FooterSection() {
   return (
@@ -73,9 +74,11 @@ export default function FooterSection() {
         <div className="w-full h-px bg-linear-to-r from-transparent via-gray-300 to-transparent my-2"></div>
         <div className="flex flex-col lg:flex-row justify-center items-start sm:items-center gap-6">
           <div>
-            <p className="text-gray-500 text-sm">
-              Developed by Muhammad Farooq.
-            </p>
+            <Link to={"https://www.linkedin.com/in/muhammadfarooq85"}>
+              <p className="text-gray-500 text-sm hover:text-blue-500">
+                Developed by Muhammad Farooq.
+              </p>
+            </Link>
             <p className="text-gray-400 text-xs mt-1 text-left xl:text-center">
               Last Updated:{" "}
               {new Date(import.meta.env.BUILD_DATE).toLocaleDateString(

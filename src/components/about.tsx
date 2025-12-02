@@ -13,12 +13,11 @@ export default function HeroSection() {
           <div className="w-full flex justify-center">
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-4xl overflow-hidden shadow-xl border-2 border-white bg-white transition">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=687&auto=format&fit=crop"
+                src={about.imageUrl}
                 alt="Maha Zainab - Researcher"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 hover:opacity-100 transition duration-300"></div>
             </div>
           </div>
           <div className="text-center lg:text-left space-y-1">
