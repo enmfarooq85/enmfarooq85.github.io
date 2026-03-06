@@ -14,7 +14,7 @@ export default function HeroSection() {
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-4xl overflow-hidden shadow-xl border-2 border-white bg-white transition">
               <img
                 src={about.imageUrl}
-                alt="Maha Zainab - Researcher"
+                alt="Muhammad Farooq"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -36,15 +36,14 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="lg:col-span-2 space-y-8">
-          <div className="space-y-5 text-lg leading-relaxed text-gray-700">
+          <div className="space-y-5 text-xl leading-relaxed text-gray-700">
             <p>{about?.p1}</p>
             {about?.p2 && <p>{about?.p2}</p>}
-            {about?.p3 && <p>{about?.p3}</p>}
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200 w-fit">
             <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-blue-700">
-              Available for Research Collaborations
+              Available for Work
             </span>
           </div>
         </div>

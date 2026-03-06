@@ -1,16 +1,16 @@
 // Libraries Imports
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { Menu, X, NotepadTextDashed } from "lucide-react";
+// Local Imports
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Link as ScrollLink } from "react-scroll";
 import { Button } from "@/components/ui/button";
-// Local Imports
-import { menuItems, cvData } from "@/data/navbar";
+import { menuItems } from "@/data/navbar";
 
 export default function NavbarSection() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,13 +27,12 @@ export default function NavbarSection() {
       className={`sticky top-0 z-50 border-b p-4 bg-white/90
         backdrop-blur-md transition ${isScrolled ? "shadow-sm" : ""}`}
     >
-      {/* Desktop */}
       <nav className="mx-auto hidden max-w-6xl lg:flex lg:items-center lg:justify-between">
         <Link
           to="/"
           className="text-2xl font-semibold tracking-tight text-blue-600"
         >
-          Maha Zainab
+          Muhammad Farooq
         </Link>
         <div className="flex items-center gap-6">
           <NavigationMenu>
@@ -54,27 +53,25 @@ export default function NavbarSection() {
               ))}
             </NavigationMenuList>
           </NavigationMenu>
-          <Link to={cvData.url}>
+          <Link to={"/cv"}>
             <Button
               variant="outline"
               size="lg"
               className="rounded-full border cursor-pointer border-blue-600 px-6 py-3 text-lg font-semibold text-blue-600
               hover:bg-blue-600 hover:text-white transition"
             >
-              {cvData.title}
+              CV
               <NotepadTextDashed className="ml-2" />
             </Button>
           </Link>
         </div>
       </nav>
-
-      {/* Mobile */}
       <div className="flex items-center justify-between lg:hidden">
         <Link
           to="/"
           className="text-xl font-semibold tracking-tight text-blue-600"
         >
-          Maha Zainab
+          Muhammad Farooq
         </Link>
         <Button
           variant={"outline"}
@@ -102,14 +99,17 @@ export default function NavbarSection() {
               {item.title}
             </ScrollLink>
           ))}
-
-          <Link to={cvData.url} onClick={() => setMobileOpen(false)}>
+          <Link
+            to={"/cv"}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileOpen(false)}
+          >
             <Button
               variant="outline"
-              className="w-full rounded-full border border-blue-600 py-3 text-lg font-semibold text-blue-600
-              hover:bg-blue-600 hover:text-white transition! duration-150"
+              className="w-full rounded-full border border-blue-600 py-3 text-lg font-semibold text-blue-600 hover:bg-blue-600 hover:text-white transition duration-150"
             >
-              {cvData.title}
+              CV
               <NotepadTextDashed className="ml-2" />
             </Button>
           </Link>

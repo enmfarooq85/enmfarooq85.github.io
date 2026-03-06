@@ -1,7 +1,3 @@
-// Libraries Imports
-import type { Book } from "@/types/content";
-import { Bookmark, BookOpen } from "lucide-react";
-
 export function groupAndPaginate<T>(
   items: T[],
   groupBy: keyof T,
@@ -48,31 +44,3 @@ export function groupAndPaginate<T>(
     }),
   };
 }
-
-export const getStatusBadge = (status: string) => {
-  if (status === "completed") {
-    return {
-      bgColor: "bg-blue-100",
-      borderColor: "border-blue-200",
-      textColor: "text-blue-700",
-      icon: Bookmark,
-      iconColor: "text-blue-600",
-    };
-  } else {
-    return {
-      bgColor: "bg-amber-100",
-      borderColor: "border-amber-200",
-      textColor: "text-amber-700",
-      icon: BookOpen,
-      iconColor: "text-amber-600",
-    };
-  }
-};
-
-export const getSortedBooksByStatus = (books: Book[]) => {
-  return books.sort((a, b) => {
-    if (a.status === "currently reading" && b.status === "completed") return -1;
-    if (a.status === "completed" && b.status === "currently reading") return 1;
-    return 0;
-  });
-};

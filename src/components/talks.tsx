@@ -1,12 +1,12 @@
 // Libraries Imports
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Calendar, Mic, Projector } from "lucide-react";
+import { Calendar, ExternalLink, Mic, Projector } from "lucide-react";
 // Local Imports
 import { Button } from "@/components/ui/button";
 import { groupAndPaginate } from "@/helpers/helpers";
 import { talks } from "@/data/content";
-import EmptyStateComp from "@/components/no-data";
+import EmptyStateComp from "@/components/empty-state";
 
 export default function TalksSection() {
   const [visibleCount, setVisibleCount] = useState(5);
@@ -38,7 +38,7 @@ export default function TalksSection() {
   );
 
   return (
-    <section id="talks" className="py-10 bg-gray-50">
+    <section id="talks" className="py-10 bg-linear-to-br from-slate-50 via-white to-blue-50/50">
       <div className="max-w-6xl mx-auto px-6 xl:px-0">
         <div className="text-left xl:text-center mb-10">
           <h2 className="text-5xl font-bold mb-4 bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
@@ -88,6 +88,17 @@ export default function TalksSection() {
                             >
                               <Projector size={18} />
                               Slides
+                            </Button>
+                          </Link>
+                        )}
+                        {item?.liveLink && (
+                          <Link to={item?.liveLink}>
+                            <Button
+                              variant={"outline"}
+                              className="flex items-center gap-2 px-6 py-3 text-lg cursor-pointer rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-colors hover:text-white"
+                            >
+                              <ExternalLink size={18} />
+                              Link
                             </Button>
                           </Link>
                         )}

@@ -1,4 +1,5 @@
 // Libraries Imports
+import CVPage from "@/pages/cv-page";
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 // Local Imports
@@ -6,7 +7,7 @@ const HomePage = lazy(() => import("@/pages/home"));
 
 export default function AppRouting() {
   return (
-    <BrowserRouter basename="/Maha-Zainab-USA-Portfolio/">
+    <BrowserRouter basename="/">
       <Suspense
         fallback={
           <div className="flex justify-center items-center min-h-screen">
@@ -16,6 +17,7 @@ export default function AppRouting() {
       >
         <Routes>
           <Route index element={<HomePage />} />
+          <Route path="/cv" element={<CVPage />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

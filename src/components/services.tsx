@@ -1,39 +1,50 @@
 // Libraries Imports
-import { useState, useEffect } from "react";
-import { Calendar, BadgeCheck } from "lucide-react";
+import { type JSX } from "react";
+import { Globe, Server, Smartphone, Palette } from "lucide-react";
 // Local Imports
-import { groupAndPaginate } from "@/helpers/helpers";
 import { services } from "@/data/content";
-import EmptyStateComp from "@/components/no-data";
+import EmptyStateComp from "@/components/empty-state";
+
+const serviceIcons: Record<string, JSX.Element> = {
+  Frontend: <Palette className="w-5 h-5" />,
+  "Full Stack": <Globe className="w-5 h-5" />,
+  Backend: <Server className="w-5 h-5" />,
+  Mobile: <Smartphone className="w-5 h-5" />,
+};
+
+const serviceColors: Record<string, string> = {
+  Frontend: "bg-blue-100 text-blue-700 border-blue-200",
+  "Full Stack": "bg-green-100 text-green-700 border-green-200",
+  Backend: "bg-purple-100 text-purple-700 border-purple-200",
+  Mobile: "bg-orange-100 text-orange-700 border-orange-200",
+};
 
 export default function ServicesSection() {
-  const [visibleCount, setVisibleCount] = useState(5);
+  const getIconForService = (type: string) => {
+    return serviceIcons[type] || serviceIcons.default;
+  };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      const windowHeight = window.innerHeight;
-      const docHeight = document.documentElement.scrollHeight;
+  const getColorForService = (type: string) => {
+    return serviceColors[type] || serviceColors.default;
+  };
 
-      if (scrollTop + windowHeight < docHeight - 50) {
-        setVisibleCount((prev) => {
-          if (prev >= services.length) return prev;
-          return Math.min(prev + 5, services.length);
-        });
-      }
-    };
+  const formatTechStack = (tech: string | string[]): JSX.Element => {
+    const techArray =
+      typeof tech === "string" ? tech.split(",").map((t) => t.trim()) : tech;
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const { visibleGroups, sortedKeys } = groupAndPaginate(
-    services,
-    "year",
-    visibleCount
-  );
+    return (
+      <div className="flex flex-wrap gap-2 mt-4">
+        {techArray.map((item, index) => (
+          <span
+            key={index}
+            className="px-3 py-1.5 text-sm bg-gray-100 text-gray-700 rounded-full border border-gray-200 hover:bg-gray-200 transition-colors"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+    );
+  };
 
   return (
     <section id="services" className="py-10 bg-gray-50">
@@ -44,44 +55,38 @@ export default function ServicesSection() {
           </h2>
         </div>
         <div className="space-y-6">
-          {sortedKeys.length === 0 && <EmptyStateComp />}
-          {sortedKeys?.map((year) => (
-            <div key={year} className="space-y-2">
-              <div className="flex items-center gap-3">
-                <Calendar className="w-6 h-6 text-blue-600" />
-                <h3 className="text-3xl font-bold text-gray-900">{year}</h3>
-                <div className="flex-1 h-px bg-gray-300 ml-4"></div>
-                <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-                  {visibleGroups[year]?.length} service
-                  {visibleGroups[year]?.length > 1 ? "s" : ""}
-                </span>
-              </div>
-              <div className="grid gap-4">
-                {visibleGroups[year]?.map((item) => (
-                  <div
-                    key={item?.id}
-                    className="group bg-white rounded-2xl p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-blue-200"
-                  >
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
-                      <div className="flex-1">
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 border border-blue-200">
-                            <BadgeCheck size={16} className="text-blue-600" />
-                            <span className="text-sm font-medium text-blue-700">
-                              {item?.category}
-                            </span>
-                          </div>
-                        </div>
-                        <h3 className="text-xl font-bold text-gray-900">
-                          {item?.title}
-                        </h3>
-                      </div>
-                    </div>
+          {services.length === 0 ? (
+            <EmptyStateComp />
+          ) : (
+            <div className="grid gap-6 md:grid-cols-2">
+              {services.map((item) => (
+                <div
+                  key={item?.id}
+                  className="group bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-gray-300"
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <span
+                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border ${getColorForService(item?.type)}`}
+                    >
+                      {getIconForService(item?.type)}
+                      {item?.type}
+                    </span>
                   </div>
-                ))}
-              </div>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    {item?.title}
+                  </h3>
+                  {item?.description && (
+                    <p className="text-gray-600 text-md leading-relaxed">
+                      {item?.description}
+                    </p>
+                  )}
+
+                  {item?.tech && formatTechStack(item?.tech)}
+                </div>
+              ))}
             </div>
-          ))}
+          )}
         </div>
       </div>
     </section>

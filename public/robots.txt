@@ -3,4 +3,4 @@ Allow: /
 public/sitemap.xml
 
 
-Sitemap: https://maha-zainab.github.io/sitemap.xml
+Sitemap: https://muhammadfarooq85.github.io/sitemap.xml

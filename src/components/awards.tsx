@@ -4,7 +4,7 @@ import { Calendar, Trophy } from "lucide-react";
 // Local Imports
 import { awards } from "@/data/content";
 import { groupAndPaginate } from "@/helpers/helpers";
-import EmptyStateComp from "@/components/no-data";
+import EmptyStateComp from "@/components/empty-state";
 
 export default function AwardsSection() {
   const [visibleCount, setVisibleCount] = useState(5);
@@ -36,7 +36,7 @@ export default function AwardsSection() {
   );
 
   return (
-    <section id="awards" className="py-10 bg-white">
+    <section id="awards" className="py-10 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6 xl:px-0">
         <div className="text-left xl:text-center mb-10">
           <h2 className="text-5xl font-bold mb-4 bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
@@ -56,7 +56,7 @@ export default function AwardsSection() {
                   {visibleGroups[year]?.length > 1 ? "s" : ""}
                 </span>
               </div>
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
                 {visibleGroups[year]?.map((item) => (
                   <div
                     key={item?.id}

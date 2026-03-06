@@ -2,13 +2,12 @@
 import type {
   About,
   Award,
-  Book,
-  News,
-  Publication,
+  Experience,
+  Focus,
+  Project,
   Service,
   Talk,
 } from "@/types/content";
-import profileImage from "../assets/images/profile.jpg";
 
 /*
  * ┌───────────────────────────────┐
@@ -20,134 +19,125 @@ import profileImage from "../assets/images/profile.jpg";
  */
 
 export const about: About = {
-  imageUrl: profileImage,
-  name: "Maha Zainab",
-  degree: "PhD in Computer Science and Software Engineering",
-  instituteName: "Auburn University",
-  email: "maz0032@auburn.edu",
-  p1: "PhD researcher focusing on Generative AI, NLP, secure code understanding, and LLM evaluation. I have experience building end-to-end data pipelines, RAG systems, and multi-agent reasoning frameworks. I enjoy designing practical, interpretable ML solutions by combining rigorous evaluation methods with scalable engineering practices.",
-  p2: "",
-  p3: "",
+  imageUrl: "https://avatars.githubusercontent.com/u/143240734?v=4",
+  name: "Muhammad Farooq",
+  degree: "Bachelors in Computer Science",
+  instituteName: "Virtual University of Pakistan",
+  email: "enmuhammadfarooq@gmail.com",
+  p1: "I am a Full Stack Developer with strong experience in building modern web and mobile applications using the MERN stack, React Native, and Next.js. I enjoy developing scalable, efficient, and user-focused solutions across both frontend and backend systems.",
+  p2: "Alongside application development, I have a strong passion for Data Structures and Algorithms, competitive programming, and continuously improving my problem-solving skills. I am also enthusiastic about building practical projects that combine solid engineering practices with performance-oriented thinking. My focus is always on learning, improving, and creating high-quality software that delivers real value.",
   // For footer
-  location: "United States Of America",
+  location: "Punjab, Pakistan",
   researchAreas: [
-    "Generative AI",
-    "NLP",
-    "Secure Code Understanding",
-    "RAG Systems",
-    "Multi-Agent Reasoning",
+    "Full Stack",
+    "MERN Stack",
+    "Mobile App",
+    "DSA",
+    "Competitive Programming",
+    "Web Applications",
   ],
   shortBio:
-    "PhD researcher working on Generative AI, NLP, secure code understanding, and LLM evaluation, with experience in data pipelines, RAG systems, and multi-agent reasoning.",
+    "Full Stack Developer experienced in building scalable web and mobile applications using the MERN stack, React Native, and Next.js. Passionate about data structures, algorithms, competitive programming, and developing practical projects that combine strong engineering principles with efficient problem-solving."
 };
 
 /*
  * ┌───────────────────────────────┐
- * │        🌟 Publication 🌟       │
+ * │        🌟 Service 🌟       │
  * └───────────────────────────────┘
  *
  * ────────────────────────────────
  * Keep calm and code on! 👩‍💻👨‍💻
  */
 
-export const publications: Publication[] = [
+export const services: Service[] = [
   {
     id: 1,
-    title:
-      "Advancements in Neural Network Architectures for Healthcare Diagnostics",
-    authors: ["Maha Zainab", "Dr. Sarah Chen", "Prof. Michael Rodriguez"],
-    pdfLink: "/publications/neural-networks-healthcare.pdf",
-    talkLink: "/talks/neural-networks-healthcare",
-    year: "2024",
-    doi: "10.1234/neuro.health.2024.1",
+    type: "Full Stack",
+    title: "Full Stack Development",
+    description: "End-to-end web applications with modern technologies. From database design to responsive UI, I handle it all.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "TypeScript"],
   },
   {
     id: 2,
-    title: "Evaluating Large Language Models for Secure Code Generation",
-    authors: [
-      "Maha Zainab",
-      "Dr. James Wilson",
-      "Dr. Emily Zhang",
-      "Prof. Robert Kim",
-    ],
-    pdfLink: "/publications/llm-secure-code.pdf",
-    talkLink: "/talks/llm-secure-code",
-    year: "2024",
-    doi: "10.1234/llm.secure.2024.2",
+    type: "Frontend",
+    title: "Frontend Development",
+    description: "Beautiful, responsive, and performant user interfaces that provide exceptional user experiences.",
+    tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
   },
   {
     id: 3,
-    title: "Multi-Agent Reasoning Frameworks for Complex Problem Solving",
-    authors: ["Maha Zainab", "Dr. Lisa Thompson", "Prof. David Park"],
-    pdfLink: "/publications/multi-agent-reasoning.pdf",
-    talkLink: "/talks/multi-agent-reasoning",
-    year: "2023",
-    doi: "10.1234/multi.agent.2023.3",
+    type: "Backend",
+    title: "Backend Development",
+    description: "Scalable server-side solutions, RESTful APIs, and microservices architecture.",
+    tech: ["Node.js", "Python", "GraphQL", "Docker"],
   },
   {
     id: 4,
-    title: "RAG Systems: Enhancing Information Retrieval with Generative AI",
-    authors: [
-      "Maha Zainab",
-      "Dr. Andrew Baker",
-      "Dr. Maria Garcia",
-      "Prof. Kevin Lee",
-    ],
-    pdfLink: "/publications/rag-systems.pdf",
-    talkLink: "/talks/rag-systems",
-    year: "2023",
-    doi: "10.1234/rag.systems.2023.4",
-  },
+    type: "Mobile",
+    title: "App Development",
+    description: "Cross-platform mobile applications for iOS and Android using modern frameworks.",
+    tech: ["React Native", "Firebase", "Redux", "Expo"],
+  }
+];
+
+/*
+ * ┌───────────────────────────────┐
+ * │        🌟 Projects 🌟       │
+ * └───────────────────────────────┘
+ *
+ * ────────────────────────────────
+ * Keep calm and code on! 👩‍💻👨‍💻
+ */
+
+export const projects: Project[] = [
   {
-    id: 5,
-    title: "Interpretable Machine Learning for Clinical Decision Support",
-    authors: ["Maha Zainab", "Dr. Jennifer Martinez", "Prof. Richard Brown"],
-    pdfLink: "/publications/interpretable-ml-clinical.pdf",
-    talkLink: "/talks/interpretable-ml-clinical",
-    year: "2022",
-    doi: "10.1234/interpret.ml.2022.5",
+    id: 1,
+    title: "AI Dental Copilot",
+    description: "AI Dental Copilot is a revolutionary mobile application that leverages artificial intelligence to provide preliminary dental health assessments. Our app analyzes dental images and symptoms to offer insights and recommendations, helping users monitor their oral health between dental visits.",
+    tech: ["React Native", "Fast API", "Open AI", "Langchain"],
+    github: "https://github.com/muhammadfarooq85/AI-Dental-Copilot",
+    liveLink: "https://drive.google.com/file/d/1o-tj0gZp2NsyIAIVCIz80V1LdKulUBm0/view",
+    year: "2025",
   },
 ];
 
 /*
  * ┌───────────────────────────────┐
- * │        🌟 News 🌟       │
+ * │        🌟 Experience 🌟       │
  * └───────────────────────────────┘
  *
  * ────────────────────────────────
  * Keep calm and code on! 👩‍💻👨‍💻
  */
 
-export const news: News[] = [
+export const experiences: Experience[] = [
   {
     id: 1,
-    title: "Featured in Tech Innovation Magazine for AI Research Breakthrough",
-    year: "2024",
-    category: "Media Feature",
+    title: "DSA Trainer",
+    organization: "iCodeGuru",
+    organizationLink: "https://icode.guru/",
+    location: "Santa Clara, California",
+    type: "Part-Time",
+    year: 2025,
+    duration: "Sep 2025 - Present",
+    description: "Leading frontend development for multiple products, mentoring junior developers, and implementing best practices.",
+    skills: ["DSA", "Communication Skills", "Presentation Skills"],
+    startDate: "2025-09-01",
+    endDate: undefined
   },
   {
     id: 2,
-    title: "Keynote Speaker at International Conference on Sustainable Energy",
-    year: "2024",
-    category: "Conference",
-  },
-  {
-    id: 3,
-    title: "Receives Prestigious Research Excellence Award 2024",
-    year: "2024",
-    category: "Award",
-  },
-  {
-    id: 4,
-    title: "New Research Collaboration Announced with MIT Media Lab",
-    year: "2023",
-    category: "Collaboration",
-  },
-  {
-    id: 5,
-    title: "Interview on Future of Quantum Computing in Healthcare",
-    year: "2023",
-    category: "Podcast",
+    title: "Full Stack Developer (MERN)",
+    organization: "Active Birds Solution",
+    organizationLink: "https://activebirds.org",
+    location: "Lahore, Pakistan",
+    type: "Remote",
+    year: 2025,
+    duration: "May 2025 - Aug 2025",
+    description: "Developed and maintained full-stack features for a SaaS platform.",
+    skills: ["Node.js", "Express", "React", "MongoDB", "Vercel", "Netlify"],
+    startDate: "2025-05-01",
+    endDate: "2025-08-30"
   },
 ];
 
@@ -163,44 +153,22 @@ export const news: News[] = [
 export const talks: Talk[] = [
   {
     id: 1,
-    title: "Keynote Speaker at International AI Conference 2024",
-    organization: "International AI Conference",
-    slidesLink: "/slides/ai-conference-2024",
-    category: "Keynote",
-    year: "2024",
+    title: "7am LeetCode Mastery",
+    organization: "iCodeGuru",
+    slidesLink: "",
+    category: "Sessions",
+    liveLink: "https://youtube.com/playlist?list=PLe-jr3hh4N_kAm508JcuEhHjWyPdwndvW&si=_8iQrqrdEKA-CQeg",
+    year: "2025",
   },
   {
     id: 2,
-    title: "Panel Discussion on Ethical AI Development",
-    organization: "Global Tech Summit",
-    slidesLink: "/slides/ethical-ai-panel",
-    category: "Panel Discussion",
-    year: "2024",
-  },
-  {
-    id: 3,
-    title: "Research Presentation on Neural Network Optimization",
-    organization: "Machine Learning Symposium",
-    slidesLink: "/slides/neural-network-optimization",
-    category: "Research Talk",
-    year: "2023",
-  },
-  {
-    id: 4,
-    title: "Workshop on Large Language Model Applications",
-    organization: "AI Developers Conference",
-    slidesLink: "/slides/llm-workshop",
-    category: "Workshop",
-    year: "2023",
-  },
-  {
-    id: 5,
-    title: "Invited Talk on Future of Generative AI",
-    organization: "Tech Innovation Forum",
-    slidesLink: "/slides/generative-ai-future",
-    category: "Invited Talk",
-    year: "2022",
-  },
+    title: "7am Grind-75 LeetCode Track-II",
+    organization: "iCodeGuru",
+    slidesLink: "",
+    category: "Sessions",
+    liveLink: "https://youtube.com/playlist?list=PLe-jr3hh4N_lIqDcrea8ueS1AQkYvQVDF&si=K8P1-egif1m1M7Lj",
+    year: "2025",
+  }
 ];
 
 /*
@@ -215,127 +183,32 @@ export const talks: Talk[] = [
 export const awards: Award[] = [
   {
     id: 1,
-    title: "Research Excellence Award",
-    organization: "International Research Foundation",
-    year: "2024",
+    title: "Calico Fall'25",
+    organization: "University of California, Berkeley",
+    year: "2025",
   },
   {
     id: 2,
-    title: "Innovation in Science Award",
-    organization: "Global Science Association",
-    year: "2024",
-  },
-  {
-    id: 3,
-    title: "Outstanding Researcher Award",
-    organization: "National Science Council",
-    year: "2023",
-  },
-  {
-    id: 4,
-    title: "Academic Achievement Award",
-    organization: "University Research Board",
-    year: "2023",
-  },
-  {
-    id: 5,
-    title: "Young Scientist Award",
-    organization: "Science Innovation Foundation",
-    year: "2022",
+    title: "HackVortex CodeStorm 5",
+    organization: "HackVortex",
+    year: "2025",
   },
 ];
 
 /*
  * ┌───────────────────────────────┐
- * │        🌟 Service 🌟       │
+ * │        🌟 Focus 🌟       │
  * └───────────────────────────────┘
  *
  * ────────────────────────────────
  * Keep calm and code on! 👩‍💻👨‍💻
  */
 
-export const services: Service[] = [
+export const currentFocus: Focus[] = [
   {
     id: 1,
-    title: "Journal Peer Review - Nature Communications",
-    category: "Reviewer",
-    year: "2024",
-    organization: "Nature Communications",
-  },
-  {
-    id: 2,
-    title: "Conference Program Committee Member",
-    category: "Committee Member",
-    year: "2024",
-    organization: "ICML 2024",
-  },
-  {
-    id: 3,
-    title: "Grant Proposal Reviewer",
-    category: "Grant Reviewer",
-    year: "2023",
-    organization: "National Science Foundation",
-  },
-  {
-    id: 4,
-    title: "Thesis Committee Member",
-    category: "Thesis Committee",
-    year: "2023",
-    organization: "Stanford University",
-  },
-  {
-    id: 5,
-    title: "Journal Editorial Board",
-    category: "Editorial Board",
-    year: "2022",
-    organization: "JAIR Journal",
-  },
-];
-
-/*
- * ┌───────────────────────────────┐
- * │        🌟 Book 🌟       │
- * └───────────────────────────────┘
- *
- * ────────────────────────────────
- * Keep calm and code on! 👩‍💻👨‍💻
- */
-
-export const books: Book[] = [
-  {
-    id: 1,
-    title:
-      "The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution",
-    author: "Walter Isaacson",
-    status: "completed",
-    year: "2024",
-  },
-  {
-    id: 2,
-    title: "Thinking, Fast and Slow",
-    author: "Daniel Kahneman",
-    status: "currently reading",
-    year: "2024",
-  },
-  {
-    id: 3,
-    title: "The Structure of Scientific Revolutions",
-    author: "Thomas S. Kuhn",
-    status: "completed",
-    year: "2023",
-  },
-  {
-    id: 4,
-    title: "Deep Learning",
-    author: "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
-    status: "completed",
-    year: "2023",
-  },
-  {
-    id: 5,
-    title: "The Emperor of All Maladies: A Biography of Cancer",
-    author: "Siddhartha Mukherjee",
-    status: "currently reading",
-    year: "2023",
+    title: "Data Structures & Algorithms",
+    description: "Practicing and mastering fundamental data structures, algorithms, and problem-solving patterns to build efficient solutions.",
+    topics: ["Trees & Graphs", "Dynamic Programming", "Greedy Algorithms", "Recursion & Backtracking"],
   },
 ];

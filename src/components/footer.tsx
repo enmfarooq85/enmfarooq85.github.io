@@ -37,6 +37,8 @@ export default function FooterSection() {
                 <ScrollLink
                   to={item?.url}
                   key={item?.title}
+                  smooth={true}
+                  duration={1200}
                   className="block text-gray-600 cursor-pointer hover:text-blue-600 transition-colors duration-200 text-md"
                 >
                   {item?.title}
@@ -46,7 +48,7 @@ export default function FooterSection() {
           </div>
           <div className="space-y-2">
             <h3 className="text-xl font-semibold text-gray-900">
-              Research Areas
+              Interest Areas
             </h3>
             <div>
               {about?.researchAreas?.map((researchArea) => (

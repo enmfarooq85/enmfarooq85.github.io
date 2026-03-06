@@ -1,5 +1,5 @@
 // Local Imports
-import type { CvData, MenuItem } from "@/types/navbar";
+import type { MenuItem } from "@/types/navbar";
 
 /*
  * ┌───────────────────────────────┐
@@ -12,24 +12,10 @@ import type { CvData, MenuItem } from "@/types/navbar";
 
 export const menuItems: MenuItem[] = [
   { title: "About", url: "about" },
-  { title: "Publications", url: "publications" },
-  { title: "News", url: "news" },
+  { title: "Services", url: "services" },
+  { title: "Projects", url: "projects" },
+  { title: "Experience", url: "experience" },
   { title: "Talks", url: "talks" },
   { title: "Awards", url: "awards" },
-  { title: "Services", url: "services" },
-  { title: "Books", url: "books" },
+  { title: "Current Focus", url: "current-focus" },
 ];
-
-/*
- * ┌───────────────────────────────┐
- * │        🌟 CvData 🌟       │
- * └───────────────────────────────┘
- *
- * ────────────────────────────────
- * Keep calm and code on! 👩‍💻👨‍💻
- */
-
-export const cvData: CvData = {
-  title: "CV",
-  url: "/cv",
-};
