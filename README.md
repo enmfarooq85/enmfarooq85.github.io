@@ -1,4 +1,4 @@
-# Maha Zainab — Portfolio Website
+# Muhammad Farooq — Portfolio Website
 
 ## A modern, fast, and responsive personal portfolio website built with React, Vite, Tailwind CSS, and Shadcn UI components. This project showcases publications, research, achievements, and professional information in a clean and elegant layout.
 
@@ -14,44 +14,14 @@
 - PWA Support
 - ESLint + Prettier
 
-# 📁 Project Structure
-
-src/
-├── components/ # Reusable UI components
-├── data/ # All dynamic data (publications, content, etc.)
-├── pages/ # Main pages
-├── types/ # type safety
-├── public/ # pwa assets and robots.txt
-├── helpers/ # Utility functions
-├── assets/ # Images /
-└── App.tsx # Root application
-
-# ✏️ Updating Portfolio Content
-
-## If you want to update any details such as:
-
-- Profile information
-- Publications
-- talks
-- Awards
-- News
-- Services
-- Books
-
-👉 Go to the src/data/ folder.
-You will find files like:
-
-```
-/data/content.ts
-```
-
-Modify the data there — the UI will update automatically.
-After editing, simply:
+### Make sure to have node js installed on your system.
 
 ```
 git add .
 git commit -m "Update portfolio data"
-git push
+git push origin main
+npm run build
+npm run deploy
 ```
 
 # 🧞‍♂️ Available Commands
