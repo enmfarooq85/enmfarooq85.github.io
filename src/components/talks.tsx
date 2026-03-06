@@ -38,7 +38,10 @@ export default function TalksSection() {
   );
 
   return (
-    <section id="talks" className="py-10 bg-linear-to-br from-slate-50 via-white to-blue-50/50">
+    <section
+      id="talks"
+      className="py-10 bg-linear-to-br from-slate-50 via-white to-blue-50/50"
+    >
       <div className="max-w-6xl mx-auto px-6 xl:px-0">
         <div className="text-left xl:text-center mb-10">
           <h2 className="text-5xl font-bold mb-4 bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">

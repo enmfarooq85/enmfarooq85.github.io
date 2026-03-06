@@ -55,7 +55,7 @@ export type Talk = {
   slidesLink: string;
   category: string;
   year: string;
-  liveLink:string
+  liveLink: string;
 };
 
 /*
@@ -89,7 +89,7 @@ export type Service = {
   description: string;
   title: string;
   tech: string[];
-}
+};
 
 /*
  * ┌───────────────────────────────┐
@@ -111,22 +111,22 @@ export type Focus = {
 
 export interface Experience {
   id: number;
-  title: string;                    // Job title (e.g., "Senior Frontend Developer")
-  organization: string;              // Company/Organization name
-  organizationLink?: string;         // Optional link to company website
-  location?: string;                 // Optional location (e.g., "San Francisco, CA")
-  type?: string;                     // Optional type (e.g., "Full-time", "Contract", "Remote")
-  year: number | string;             // Year for grouping (e.g., 2024 or "2024")
-  duration?: string;                  // Optional duration (e.g., "Jan 2024 - Present")
-  description: string;                // Job description
-  skills: string[];                   // Array of skills/technologies used
-  achievements?: string[];            // Optional array of key achievements
-  startDate?: string;                 // Optional start date for sorting
-  endDate?: string;                    // Optional end date (null/undefined for current)
+  title: string; // Job title (e.g., "Senior Frontend Developer")
+  organization: string; // Company/Organization name
+  organizationLink?: string; // Optional link to company website
+  location?: string; // Optional location (e.g., "San Francisco, CA")
+  type?: string; // Optional type (e.g., "Full-time", "Contract", "Remote")
+  year: number | string; // Year for grouping (e.g., 2024 or "2024")
+  duration?: string; // Optional duration (e.g., "Jan 2024 - Present")
+  description: string; // Job description
+  skills: string[]; // Array of skills/technologies used
+  achievements?: string[]; // Optional array of key achievements
+  startDate?: string; // Optional start date for sorting
+  endDate?: string; // Optional end date (null/undefined for current)
 }
 
 // If you want stricter typing with dates for sorting
 export interface ExperienceWithDates extends Experience {
-  startDate: string;  // ISO date format "2024-01-15"
-  endDate?: string;   // ISO date format or undefined for current
+  startDate: string; // ISO date format "2024-01-15"
+  endDate?: string; // ISO date format or undefined for current
 }

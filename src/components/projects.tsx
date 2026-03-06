@@ -1,6 +1,6 @@
 // Libraries Imports
 import { useState, useEffect, type JSX } from "react";
-import { Github, ExternalLink, Calendar} from "lucide-react";
+import { Github, ExternalLink, Calendar } from "lucide-react";
 // Local Imports
 import { Button } from "@/components/ui/button";
 import { projects } from "@/data/content";
@@ -55,7 +55,10 @@ export default function ProjectsSection() {
   );
 
   return (
-    <section id="projects" className="py-10 bg-linear-to-br from-slate-50 via-white to-blue-50/50">
+    <section
+      id="projects"
+      className="py-10 bg-linear-to-br from-slate-50 via-white to-blue-50/50"
+    >
       <div className="max-w-6xl mx-auto px-6 xl:px-0">
         <div className="text-left lg:text-center mb-10">
           <h2 className="text-5xl font-bold mb-4 bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">

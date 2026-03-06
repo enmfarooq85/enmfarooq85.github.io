@@ -37,7 +37,7 @@ export const about: About = {
     "Web Applications",
   ],
   shortBio:
-    "Full Stack Developer experienced in building scalable web and mobile applications using the MERN stack, React Native, and Next.js. Passionate about data structures, algorithms, competitive programming, and developing practical projects that combine strong engineering principles with efficient problem-solving."
+    "Full Stack Developer experienced in building scalable web and mobile applications using the MERN stack, React Native, and Next.js. Passionate about data structures, algorithms, competitive programming, and developing practical projects that combine strong engineering principles with efficient problem-solving.",
 };
 
 /*
@@ -54,30 +54,34 @@ export const services: Service[] = [
     id: 1,
     type: "Full Stack",
     title: "Full Stack Development",
-    description: "End-to-end web applications with modern technologies. From database design to responsive UI, I handle it all.",
+    description:
+      "End-to-end web applications with modern technologies. From database design to responsive UI, I handle it all.",
     tech: ["React", "Node.js", "Express", "MongoDB", "TypeScript"],
   },
   {
     id: 2,
     type: "Frontend",
     title: "Frontend Development",
-    description: "Beautiful, responsive, and performant user interfaces that provide exceptional user experiences.",
+    description:
+      "Beautiful, responsive, and performant user interfaces that provide exceptional user experiences.",
     tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
   },
   {
     id: 3,
     type: "Backend",
     title: "Backend Development",
-    description: "Scalable server-side solutions, RESTful APIs, and microservices architecture.",
+    description:
+      "Scalable server-side solutions, RESTful APIs, and microservices architecture.",
     tech: ["Node.js", "Python", "GraphQL", "Docker"],
   },
   {
     id: 4,
     type: "Mobile",
     title: "App Development",
-    description: "Cross-platform mobile applications for iOS and Android using modern frameworks.",
+    description:
+      "Cross-platform mobile applications for iOS and Android using modern frameworks.",
     tech: ["React Native", "Firebase", "Redux", "Expo"],
-  }
+  },
 ];
 
 /*
@@ -93,10 +97,12 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "AI Dental Copilot",
-    description: "AI Dental Copilot is a revolutionary mobile application that leverages artificial intelligence to provide preliminary dental health assessments. Our app analyzes dental images and symptoms to offer insights and recommendations, helping users monitor their oral health between dental visits.",
+    description:
+      "AI Dental Copilot is a revolutionary mobile application that leverages artificial intelligence to provide preliminary dental health assessments. Our app analyzes dental images and symptoms to offer insights and recommendations, helping users monitor their oral health between dental visits.",
     tech: ["React Native", "Fast API", "Open AI", "Langchain"],
     github: "https://github.com/muhammadfarooq85/AI-Dental-Copilot",
-    liveLink: "https://drive.google.com/file/d/1o-tj0gZp2NsyIAIVCIz80V1LdKulUBm0/view",
+    liveLink:
+      "https://drive.google.com/file/d/1o-tj0gZp2NsyIAIVCIz80V1LdKulUBm0/view",
     year: "2025",
   },
 ];
@@ -120,10 +126,11 @@ export const experiences: Experience[] = [
     type: "Part-Time",
     year: 2025,
     duration: "Sep 2025 - Present",
-    description: "Leading frontend development for multiple products, mentoring junior developers, and implementing best practices.",
+    description:
+      "Leading frontend development for multiple products, mentoring junior developers, and implementing best practices.",
     skills: ["DSA", "Communication Skills", "Presentation Skills"],
     startDate: "2025-09-01",
-    endDate: undefined
+    endDate: undefined,
   },
   {
     id: 2,
@@ -134,10 +141,11 @@ export const experiences: Experience[] = [
     type: "Remote",
     year: 2025,
     duration: "May 2025 - Aug 2025",
-    description: "Developed and maintained full-stack features for a SaaS platform.",
+    description:
+      "Developed and maintained full-stack features for a SaaS platform.",
     skills: ["Node.js", "Express", "React", "MongoDB", "Vercel", "Netlify"],
     startDate: "2025-05-01",
-    endDate: "2025-08-30"
+    endDate: "2025-08-30",
   },
 ];
 
@@ -157,7 +165,8 @@ export const talks: Talk[] = [
     organization: "iCodeGuru",
     slidesLink: "",
     category: "Sessions",
-    liveLink: "https://youtube.com/playlist?list=PLe-jr3hh4N_kAm508JcuEhHjWyPdwndvW&si=_8iQrqrdEKA-CQeg",
+    liveLink:
+      "https://youtube.com/playlist?list=PLe-jr3hh4N_kAm508JcuEhHjWyPdwndvW&si=_8iQrqrdEKA-CQeg",
     year: "2025",
   },
   {
@@ -166,9 +175,10 @@ export const talks: Talk[] = [
     organization: "iCodeGuru",
     slidesLink: "",
     category: "Sessions",
-    liveLink: "https://youtube.com/playlist?list=PLe-jr3hh4N_lIqDcrea8ueS1AQkYvQVDF&si=K8P1-egif1m1M7Lj",
+    liveLink:
+      "https://youtube.com/playlist?list=PLe-jr3hh4N_lIqDcrea8ueS1AQkYvQVDF&si=K8P1-egif1m1M7Lj",
     year: "2025",
-  }
+  },
 ];
 
 /*
@@ -208,7 +218,13 @@ export const currentFocus: Focus[] = [
   {
     id: 1,
     title: "Data Structures & Algorithms",
-    description: "Practicing and mastering fundamental data structures, algorithms, and problem-solving patterns to build efficient solutions.",
-    topics: ["Trees & Graphs", "Dynamic Programming", "Greedy Algorithms", "Recursion & Backtracking"],
+    description:
+      "Practicing and mastering fundamental data structures, algorithms, and problem-solving patterns to build efficient solutions.",
+    topics: [
+      "Trees & Graphs",
+      "Dynamic Programming",
+      "Greedy Algorithms",
+      "Recursion & Backtracking",
+    ],
   },
 ];
