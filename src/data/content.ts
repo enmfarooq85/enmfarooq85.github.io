@@ -105,6 +105,46 @@ export const projects: Project[] = [
       "https://drive.google.com/file/d/1o-tj0gZp2NsyIAIVCIz80V1LdKulUBm0/view",
     year: "2025",
   },
+  {
+    id: 2,
+    title: "Active Birds Solution",
+    description:
+      "I redesign my ex-intern organization website. I worked on it for more than two months to polish its user interface as well as user experience. I also boosted it performance by almost 80%. It is completely supported on the all devices.",
+    tech: ["React", "CSR", "Shadcn", "Vercel"],
+    github: "",
+    liveLink: "https://activebirds.org/",
+    year: "2025",
+  },
+  {
+    id: 3,
+    title: "Homeogenius AI",
+    description:
+      "It is a homeopathic AI system that helps doctor to manage the patients easily. Doctor have to enter the details of the patient and AI will help to assist the doctor.",
+    tech: ["React", "Tailwind CSS", "Node Js", "MongoDB"],
+    github: "https://github.com/muhammadfarooq85/HomeoGenius-AI-Full-Stack",
+    liveLink: "https://homeogenius-ai.vercel.app/",
+    year: "2025",
+  },
+  {
+    id: 4,
+    title: "Sky Share",
+    description:
+      "This is a text and file sharing web app. I built this app on firebase and react. I used SCSS and tailwind css for styling the components.",
+    tech: ["React", "Tailwind CSS", "Firebase", "Firestore"],
+    github: "https://github.com/muhammadfarooq85/Sky-Share-App-Using-React-JS",
+    liveLink: "https://sky-share.vercel.app/",
+    year: "2024",
+  },
+  {
+    id: 5,
+    title: "Chat App",
+    description:
+      "This is react and firebase chat app. I have used firebase for storing data.",
+    tech: ["React", "Tailwind CSS", "Firebase", "Real-Time DB"],
+    github: "https://github.com/muhammadfarooq85/Chat-Wave-App-Using-React-Js",
+      liveLink: "https://chatt-wave.vercel.app/",
+    year: "2024",
+  },
 ];
 
 /*
@@ -203,6 +243,12 @@ export const awards: Award[] = [
     organization: "HackVortex",
     year: "2025",
   },
+  {
+    id: 3,
+    title: "The INTERNET OF AGENTS HACKATHON @SOLANA SKYLINE Hackathon",
+    organization: "Lablab.ai",
+    year: "2025",
+  },
 ];
 
 /*
@@ -225,6 +271,18 @@ export const currentFocus: Focus[] = [
       "Dynamic Programming",
       "Greedy Algorithms",
       "Recursion & Backtracking",
+    ],
+  },
+  {
+    id: 2,
+    title: "Computer Science",
+    description:
+      "Exploring core computer science concepts, including operating systems, databases, and software engineering principles to deepen my understanding of how software works at a fundamental level.",
+    topics: [
+      "Operating Systems",
+      "Databases",
+      "Software Engineering",
+      "Computer Networks",
     ],
   },
 ];
