@@ -142,7 +142,7 @@ export const projects: Project[] = [
       "This is react and firebase chat app. I have used firebase for storing data.",
     tech: ["React", "Tailwind CSS", "Firebase", "Real-Time DB"],
     github: "https://github.com/muhammadfarooq85/Chat-Wave-App-Using-React-Js",
-      liveLink: "https://chatt-wave.vercel.app/",
+    liveLink: "https://chatt-wave.vercel.app/",
     year: "2024",
   },
 ];
@@ -263,26 +263,31 @@ export const awards: Award[] = [
 export const currentFocus: Focus[] = [
   {
     id: 1,
-    title: "Data Structures & Algorithms",
+    title: "Computer Science",
     description:
-      "Practicing and mastering fundamental data structures, algorithms, and problem-solving patterns to build efficient solutions.",
+      "Focused on strengthening core computer science fundamentals, including operating systems, databases, computer networks, and software engineering. Building a deep understanding of how systems work internally and how scalable, efficient software is designed.",
     topics: [
-      "Trees & Graphs",
-      "Dynamic Programming",
-      "Greedy Algorithms",
-      "Recursion & Backtracking",
+      "Operating Systems",
+      "Databases & DBMS",
+      "Software Design",
+      "Data Structures",
+      "System Design",
+      "Computer Networks",
     ],
   },
   {
     id: 2,
-    title: "Computer Science",
+    title: "Software Development & Modern Technologies",
     description:
-      "Exploring core computer science concepts, including operating systems, databases, and software engineering principles to deepen my understanding of how software works at a fundamental level.",
+      "Building full-stack and scalable applications using modern frameworks and technologies, with a focus on web, mobile, and AI-driven solutions.",
     topics: [
-      "Operating Systems",
-      "Databases",
-      "Software Engineering",
-      "Computer Networks",
+      "MERN Stack (MongoDB, Express, React, Node.js)",
+      "Next.js",
+      "React Native",
+      "Python",
+      "Django",
+      "FastAPI",
+      "AI & Machine Learning",
     ],
   },
 ];
