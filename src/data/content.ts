@@ -145,6 +145,16 @@ export const projects: Project[] = [
     liveLink: "https://chatt-wave.vercel.app/",
     year: "2024",
   },
+  {
+    id: 6,
+    title: "Demands2Go",
+    description:
+      "Demands2Go is an e-commerce platform designed to streamline online shopping. Built with the MERN Stack (MongoDB, Express.js, React.js, Node.js).",
+    tech: ["React", "Tailwind CSS", "Node Js", "MongoDB", "Nodemailer"],
+    github: "https://github.com/enmfarooq85/Demands2Go-E-Commerce-MERN",
+    liveLink: "https://demands2go.vercel.app/",
+    year: "2025",
+  },
 ];
 
 /*
