@@ -1,9 +1,9 @@
 {
-  "name": "muhammadfarooq85-portfolio",
+  "name": "enmfarooq85-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://github.com/muhammadfarooq85/muhammadfarooq85.github.io",
+  "homepage": "https://github.com/enmfarooq85/enmfarooq85.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
