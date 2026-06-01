@@ -22,12 +22,12 @@ export const about: About = {
   imageUrl: "https://avatars.githubusercontent.com/u/143240734?v=4",
   name: "Muhammad Farooq",
   degree: "Bachelors in Computer Science",
-  instituteName: "Virtual University of Pakistan",
+  instituteName: "",
   email: "enmuhammadfarooq@gmail.com",
   p1: "I am a Full Stack Developer with strong experience in building modern web and mobile applications using the MERN stack, React Native, and Next.js. I enjoy developing scalable, efficient, and user-focused solutions across both frontend and backend systems.",
-  p2: "Alongside application development, I have a strong passion for Data Structures and Algorithms, competitive programming, and continuously improving my problem-solving skills. I am also enthusiastic about building practical projects that combine solid engineering practices with performance-oriented thinking. My focus is always on learning, improving, and creating high-quality software that delivers real value.",
+  p2: "Alongside application development, I have a strong passion for Data Structures and Algorithms, competitive programming, and continuously improving my problem solving skills. I am also enthusiastic about building practical projects that combine solid engineering practices with performance oriented thinking. My focus is always on learning, improving, and creating high quality software that delivers real value.",
   // For footer
-  location: "Punjab, Pakistan",
+  location: "Lahore, Pakistan",
   researchAreas: [
     "Full Stack",
     "MERN Stack",

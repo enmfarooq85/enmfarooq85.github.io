@@ -15,11 +15,10 @@ export default function FooterSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           <div className="space-y-2">
             <h2 className="text-xl font-bold bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-              Maha Zainab
+              Muhammad Farooq
             </h2>
             <p className="text-gray-600 text-lmd leading-relaxed">
-              Researcher & Scientist exploring the intersections of innovation,
-              technology, and human experience.
+             Full Stack Engineer (MERN, Next.js, React Native) | Passionate About DSA, Problem Solving | FAANG Aspirant
             </p>
             <div className="flex items-center gap-2 text-gray-500">
               <MapPin size={16} />
@@ -76,7 +75,7 @@ export default function FooterSection() {
         <div className="w-full h-px bg-linear-to-r from-transparent via-gray-300 to-transparent my-2"></div>
         <div className="flex flex-col lg:flex-row justify-center items-start sm:items-center gap-6">
           <div>
-            <Link to={"https://www.linkedin.com/in/muhammadfarooq85"}>
+            <Link to={"https://www.linkedin.com/in/enmfarooq85"}>
               <p className="text-gray-500 text-sm hover:text-blue-500">
                 Developed by Muhammad Farooq.
               </p>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -121,7 +121,7 @@
 }
 
 body {
-  font-family: "Space Grotesk", "Courier New", Courier, monospace;
+  font-family: "Elms Sans", "Courier New", Courier, monospace;
 }
 
 .loader {

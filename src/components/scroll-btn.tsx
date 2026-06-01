@@ -31,6 +31,7 @@ export default function ScrollToggleButton() {
     <Button
       onClick={scrollAction}
       className="
+        cursor-pointer
         fixed bottom-8 right-8 z-50
         p-4 rounded-full shadow-lg
         bg-black text-white

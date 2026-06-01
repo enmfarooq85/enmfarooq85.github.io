@@ -10,7 +10,7 @@ export default function HeroSection() {
     >
       <div className="max-w-6xl mx-auto px-6 xl:px-0 grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap10  items-start">
         <div className="flex flex-col items-center lg:items-start gap-8">
-          <div className="w-full flex justify-center">
+          <div className="w-full flex justify-center lg:justify-start ">
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-4xl overflow-hidden shadow-xl border-2 border-white bg-white transition">
               <img
                 src={about.imageUrl}
