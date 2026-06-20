@@ -2,6 +2,7 @@
 import type {
   About,
   Award,
+  Blog,
   Experience,
   Focus,
   Project,
@@ -155,6 +156,37 @@ export const projects: Project[] = [
     liveLink: "https://demands2go.vercel.app/",
     year: "2025",
   },
+  {
+    id: 7,
+    title: "Digital Portfolio",
+    description:
+      "I have designed and developed the complete personal portfolio for Maha Zainab crafted with a clean, modern, and user-focused interface.",
+    tech: ["React", "Tailwind CSS", "Typescript"],
+    github: "https://github.com/MahaZainab/MahaZainab.github.io",
+    liveLink: "https://mahazainab.github.io/",
+    year: "2025",
+  },
+  {
+    id: 8,
+    title: "Zenify",
+    description:
+      "Built using React Native and the Expo framework. I focused on developing a pixel-perfect UI while improving my frontend development skills and attention to detail.",
+    tech: ["Expo", "React Native"],
+    github: "https://github.com/enmfarooq85/Zenify-React-Native",
+    liveLink:
+      "https://drive.google.com/file/d/1XmMdslp12GT0qbBbrc4wKx7q_5st3gb4/view?usp=sharing",
+    year: "2025",
+  },
+  {
+    id: 8,
+    title: "Tip App",
+    description:
+      "A precious piece of work on html, css and javascript as the part to uplift my frotend development skills.",
+    tech: ["HTML", "CSS", "Javascript"],
+    github: "https://github.com/enmfarooq85/Tip-Calculator-App",
+    liveLink: "https://tip-calculator-app-mfa.vercel.app/",
+    year: "2025",
+  },
 ];
 
 /*
@@ -168,14 +200,36 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
   {
+    id: 3,
+    title: "Full Stack AI Engineer",
+    organization: "Dev Weekends",
+    organizationLink: "https://devweekends.com",
+    location: "Lahore, Pakistan",
+    type: "Remote",
+    year: 2025,
+    duration: "Jun 2026 - Present",
+    description:
+      "Developed and maintained full-stack features for a SaaS platform.",
+    skills: [
+      "DevOps",
+      "DSA",
+      "System Design",
+      "Engineering",
+      "MERN",
+      "Problem Solving",
+    ],
+    startDate: "2026-06-01",
+    endDate: "2026-09-30",
+  },
+  {
     id: 1,
     title: "DSA Trainer",
     organization: "iCodeGuru",
     organizationLink: "https://icode.guru/",
     location: "Santa Clara, California",
-    type: "Part-Time",
+    type: "Remote",
     year: 2025,
-    duration: "Sep 2025 - Present",
+    duration: "Sep 2025 - Feb 2025",
     description:
       "Leading frontend development for multiple products, mentoring junior developers, and implementing best practices.",
     skills: ["DSA", "Communication Skills", "Presentation Skills"],
@@ -230,6 +284,17 @@ export const talks: Talk[] = [
     year: "2025",
   },
 ];
+
+/*
+ * ┌───────────────────────────────┐
+ * │        🌟 Blog 🌟       │
+ * └───────────────────────────────┘
+ *
+ * ────────────────────────────────
+ * Keep calm and code on! 👩‍💻👨‍💻
+ */
+
+export const blogs: Blog[] = [];
 
 /*
  * ┌───────────────────────────────┐

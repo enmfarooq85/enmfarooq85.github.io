@@ -9,6 +9,7 @@ import ServicesSection from "@/components/services";
 import CurrentFocusSection from "@/components/current-focus";
 import ProjectsSection from "@/components/projects";
 import ExperienceSection from "@/components/experience";
+import BlogsSection from "@/components/blogs";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <ProjectsSection />
       <ExperienceSection />
       <TalksSection />
+      <BlogsSection />
       <AwardsSection />
       <CurrentFocusSection />
       <FooterSection />
