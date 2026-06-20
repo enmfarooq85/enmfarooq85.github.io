@@ -22,8 +22,13 @@ export default function NavbarSection() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleCVOpen = () => {
-    window.open("/Muhammad-Farooq-Resume.pdf", "_blank");
+  const handleCVDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Muhammad-Farooq-Resume.pdf";
+    link.download = "Muhammad-Farooq-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -58,7 +63,7 @@ export default function NavbarSection() {
             </NavigationMenuList>
           </NavigationMenu>
           <Button
-            onClick={handleCVOpen}
+            onClick={handleCVDownload}
             variant="outline"
             size="lg"
             className="rounded-full border cursor-pointer border-blue-600 px-6 py-3 text-lg font-semibold text-blue-600
@@ -103,7 +108,7 @@ export default function NavbarSection() {
             </ScrollLink>
           ))}
           <Button
-            onClick={handleCVOpen}
+            onClick={handleCVDownload}
             variant="outline"
             className="w-full rounded-full border border-blue-600 py-3 text-lg font-semibold cursor-pointer text-blue-600 hover:bg-blue-600 hover:text-white transition duration-150"
           >
