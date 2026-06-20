@@ -23,7 +23,7 @@ export default function NavbarSection() {
   }, []);
 
   const handleCVOpen = () => {
-    window.open("/Muhammad-Farooq-Resume.pdf");
+    window.open("/Muhammad-Farooq-Resume.pdf", "_blank");
   };
 
   return (
