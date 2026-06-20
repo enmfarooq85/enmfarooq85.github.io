@@ -1,5 +1,4 @@
 // Libraries Imports
-import CVPage from "@/pages/cv-page";
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 // Local Imports
@@ -17,7 +16,6 @@ export default function AppRouting() {
       >
         <Routes>
           <Route index element={<HomePage />} />
-          <Route path="/cv" element={<CVPage />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

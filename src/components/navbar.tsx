@@ -22,6 +22,10 @@ export default function NavbarSection() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleCVOpen = () => {
+    window.open("/Muhammad-Farooq-Resume.pdf");
+  };
+
   return (
     <section
       className={`sticky top-0 z-50 border-b p-4 bg-white/90
@@ -53,17 +57,16 @@ export default function NavbarSection() {
               ))}
             </NavigationMenuList>
           </NavigationMenu>
-          <Link to={"/cv"}>
-            <Button
-              variant="outline"
-              size="lg"
-              className="rounded-full border cursor-pointer border-blue-600 px-6 py-3 text-lg font-semibold text-blue-600
+          <Button
+            onClick={handleCVOpen}
+            variant="outline"
+            size="lg"
+            className="rounded-full border cursor-pointer border-blue-600 px-6 py-3 text-lg font-semibold text-blue-600
               hover:bg-blue-600 hover:text-white transition"
-            >
-              CV
-              <NotepadTextDashed className="ml-2" />
-            </Button>
-          </Link>
+          >
+            CV
+            <NotepadTextDashed className="ml-2" />
+          </Button>
         </div>
       </nav>
       <div className="flex items-center justify-between lg:hidden">
@@ -99,20 +102,14 @@ export default function NavbarSection() {
               {item.title}
             </ScrollLink>
           ))}
-          <Link
-            to={"/cv"}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setMobileOpen(false)}
+          <Button
+            onClick={handleCVOpen}
+            variant="outline"
+            className="w-full rounded-full border border-blue-600 py-3 text-lg font-semibold cursor-pointer text-blue-600 hover:bg-blue-600 hover:text-white transition duration-150"
           >
-            <Button
-              variant="outline"
-              className="w-full rounded-full border border-blue-600 py-3 text-lg font-semibold text-blue-600 hover:bg-blue-600 hover:text-white transition duration-150"
-            >
-              CV
-              <NotepadTextDashed className="ml-2" />
-            </Button>
-          </Link>
+            CV
+            <NotepadTextDashed className="ml-2" />
+          </Button>
         </div>
       )}
     </section>
